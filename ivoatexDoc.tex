@@ -759,6 +759,15 @@ optimise some types of sources uncommon outside of the VO community, in
 particular IVOA recommendations and notes.  Users are welcome to improve
 \texttt{ivoatex/ivoa.bst}.
 
+The \texttt{ivoatex/docrepo.bib} file is maintained using the
+\texttt{ivoatex/fetch_from_ads.py} script. The script need only be run
+occasionally to check if there are any new entries published to ADS,
+and such entries will be automatically added to the \texttt{ivoatex/docrepo.bib}
+file. The script will also report on differences found between the ADS
+entries and the file, but will not make any changes. This allows for
+manual overrides of certain entries to be maintained in the
+\texttt{ivoatex/docrepo.bib} file if necessary.
+
 \subsubsection{Citation Style}
 \label{sect:citation}
 
